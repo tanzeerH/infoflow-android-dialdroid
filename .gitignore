@@ -1,0 +1,5 @@
+*.class
+sootOutput/
+build/
+bin/
+
