@@ -259,6 +259,8 @@ public class Test {
 	 */
 	private static boolean parseAdditionalOptions(String[] args) {
 		int i = 2;
+		ExitPointSink=true;
+				
 		while (i < args.length) {
 			if (args[i].equalsIgnoreCase("--timeout")) {
 				timeout = Integer.valueOf(args[i+1]);

@@ -1,14 +1,14 @@
 #Fill the following paths to compile with jars:
 
 #Location of soot.jar
-soot.jar=./lib/soot.jar
+soot.jar=./lib/soot-dialdroid.jar
 
 #Location of FlowDroid infoflow jar
-infoflow.jar=../infoflow-dialdroid/target/infoflow.jar
+infoflow.jar=../infoflow-dialdroid/target/infoflow-dialdroid.jar
 infoflow-summaries.jar=
 
 # Target JAR file
-infoflow-android.jar=./target/infoflow-android.jar
+infoflow-android.jar=./target/infoflow-android-dialdroid.jar
 infoflow-android-javadoc.jar=./target/infoflow-android-javadoc.jar
 
 # Path to DroidBench

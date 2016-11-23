@@ -31,12 +31,12 @@ public class ICCExitPointSourceSink {
 		data.add("<android.media.AudioRecord: int read(short[],int,int)> android.permission.RECORD_AUDIO -> _SOURCE_");
 		data.add("<android.media.AudioRecord: int read(byte[],int,int)> android.permission.RECORD_AUDIO -> _SOURCE_");
 		data.add("<android.media.AudioRecord: int read(java.nio.ByteBuffer,int)> android.permission.RECORD_AUDIO -> _SOURCE_");
-		data.add("<android.content.pm.PackageManager: java.util.List getInstalledApplications(int)> android.permission.PACKAGE_USAGE_STATS -> _SOURCE_");
-		data.add("<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)> android.permission.PACKAGE_USAGE_STATS -> _SOURCE_");
+		//data.add("<android.content.pm.PackageManager: java.util.List getInstalledApplications(int)> android.permission.PACKAGE_USAGE_STATS -> _SOURCE_");
+		//data.add("<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)> android.permission.PACKAGE_USAGE_STATS -> _SOURCE_");
 		
 		data.add("<android.bluetooth.BluetoothAdapter: java.lang.String getAddress()> android.permission.BLUETOOTH_ADMIN -> _SOURCE_");
 		data.add("<android.net.wifi.WifiInfo: java.lang.String: getMacAddress()> android.permission.ACCESS_WIFI_STATE -> _SOURCE_");
-		data.add("<java.util.Locale: java.lang.String getCountry()> android.permission.ACCESS_COARSE_LOCATION -> _SOURCE_");
+		//data.add("<java.util.Locale: java.lang.String getCountry()> android.permission.ACCESS_COARSE_LOCATION -> _SOURCE_");
 		data.add("<android.net.wifi.WifiInfo: java.lang.String getSSID()> android.permission.ACCESS_WIFI_STATE -> _SOURCE_");
 		data.add("<android.net.wifi.WifiInfo: java.lang.String getSubscriberId()> android.permission.ACCESS_WIFI_STATE -> _SOURCE_");
 		data.add("<android.telephony.gsm.GsmCellLocation: int getCid()> android.permission.ACCESS_COARSE_LOCATION -> _SOURCE_");
@@ -44,7 +44,7 @@ public class ICCExitPointSourceSink {
 		data.add("<android.location.Location: double getLongitude()> android.permission.ACCESS_FINE_LOCATION -> _SOURCE_");
 		data.add("<android.location.Location: double getLatitude()> android.permission.ACCESS_FINE_LOCATION -> _SOURCE_");
 		data.add("<android.accounts.AccountManager: android.accounts.Account[] getAccounts()> -> _SOURCE_");
-		data.add("<java.util.Calendar: java.util.TimeZone getTimeZone()> android.permission.READ_CALENDAR -> _SOURCE_");
+		//data.add("<java.util.Calendar: java.util.TimeZone getTimeZone()> android.permission.READ_CALENDAR -> _SOURCE_");
 		data.add("<android.provider.Browser: android.database.Cursor getAllBookmarks()> com.android.browser.permission.READ_HISTORY_BOOKMARKS -> _SOURCE_");
 		data.add("<android.provider.Browser: android.database.Cursor getAllVisitedUrls()> com.android.browser.permission.READ_HISTORY_BOOKMARKS -> _SOURCE_");
 
@@ -122,8 +122,6 @@ public class ICCExitPointSourceSink {
 		data.add(
 				"<android.net.ConnectivityManager: android.net.NetworkInfo[] getAllNetworkInfo()> android.permission.ACCESS_NETWORK_STATE -> _SOURCE_");
 		data.add(
-				"<org.apache.harmony.xml.dom.InnerNodeImpl: void getElementsByTagName(org.apache.harmony.xml.dom.NodeListImpl,java.lang.String)> android.permission.STOP_APP_SWITCHES -> _SOURCE_");
-		data.add(
 				"<android.net.wifi.IWifiManager$Stub$Proxy: android.net.wifi.WifiInfo getConnectionInfo()> android.permission.ACCESS_WIFI_STATE -> _SOURCE_");
 		data.add(
 				"<com.android.internal.telephony.ITelephony$Stub$Proxy: android.os.Bundle getCellLocation()> android.permission.ACCESS_FINE_LOCATION android.permission.ACCESS_COARSE_LOCATION -> _SOURCE_");
@@ -137,8 +135,6 @@ public class ICCExitPointSourceSink {
 				"<com.android.internal.telephony.OperatorInfo: java.lang.String toString()> android.permission.STOP_APP_SWITCHES -> _SOURCE_");
 		data.add(
 				"<android.telephony.CellInfoCdma: android.telephony.CellSignalStrengthCdma getCellSignalStrength()> android.permission.STOP_APP_SWITCHES -> _SOURCE_");
-		data.add(
-				"<org.apache.harmony.xnet.provider.jsse.OpenSSLSessionImpl: java.lang.String getPeerHost()> android.permission.STOP_APP_SWITCHES -> _SOURCE_");
 		data.add(
 				"<android.net.sip.SipManager: android.net.sip.SipAudioCall takeAudioCall(android.content.Intent,android.net.sip.SipAudioCall$Listener)> android.permission.USE_SIP -> _SOURCE_");
 		data.add(
@@ -162,8 +158,6 @@ public class ICCExitPointSourceSink {
 		data.add(
 				"<android.net.wifi.WifiManager: java.lang.String getConfigFile()> android.permission.ACCESS_WIFI_STATE -> _SOURCE_");
 		data.add(
-				"<com.android.server.pm.PackageManagerService: android.content.pm.ActivityInfo getReceiverInfo(android.content.ComponentName,int,int)> android.permission.STOP_APP_SWITCHES -> _SOURCE_");
-		data.add(
 				"<android.net.ConnectivityManager: android.net.NetworkInfo getActiveNetworkInfo()> android.permission.ACCESS_NETWORK_STATE -> _SOURCE_");
 		data.add(
 				"<com.android.internal.telephony.cdma.RuimRecords: int getDisplayRule(java.lang.String)> android.permission.STOP_APP_SWITCHES -> _SOURCE_");
@@ -185,8 +179,6 @@ public class ICCExitPointSourceSink {
 				"<android.net.ConnectivityManager: java.lang.String[] getTetherableWifiRegexs()> android.permission.ACCESS_NETWORK_STATE -> _SOURCE_");
 		data.add(
 				"<com.android.server.WifiService: java.util.List getConfiguredNetworks()> android.permission.ACCESS_WIFI_STATE -> _SOURCE_");
-		data.add(
-				"<com.android.server.NsdService: android.os.Messenger getMessenger()> android.permission.INTERNET -> _SOURCE_");
 		data.add(
 				"<android.net.IThrottleManager$Stub$Proxy: java.lang.String getHelpUri()> android.permission.ACCESS_NETWORK_STATE -> _SOURCE_");
 		data.add(
@@ -385,12 +377,6 @@ public class ICCExitPointSourceSink {
 		data.add(
 				"<com.android.internal.telephony.cdma.CDMAPhone: void getEnhancedVoicePrivacy(android.os.Message)> android.permission.WAKE_LOCK -> _SOURCE_");
 		data.add(
-				"<gov.nist.javax.sip.SipStackImpl: java.lang.String[] getEnabledCipherSuites()> android.permission.STOP_APP_SWITCHES -> _SOURCE_");
-		data.add(
-				"<org.apache.harmony.xnet.provider.jsse.SSLSocketFactoryImpl: java.lang.String[] getDefaultCipherSuites()> android.permission.STOP_APP_SWITCHES -> _SOURCE_");
-		data.add(
-				"<org.apache.harmony.xnet.provider.jsse.OpenSSLSocketImpl: java.lang.String[] getEnabledProtocols()> android.permission.STOP_APP_SWITCHES -> _SOURCE_");
-		data.add(
 				"<com.android.internal.telephony.cdma.CDMALTEPhone: void getEnhancedVoicePrivacy(android.os.Message)> android.permission.WAKE_LOCK -> _SOURCE_");
 		data.add(
 				"<com.android.internal.os.BatteryStatsImpl: long getRadioDataUptimeMs()> android.permission.STOP_APP_SWITCHES -> _SOURCE_");
@@ -464,8 +450,6 @@ public class ICCExitPointSourceSink {
 		data.add(
 				"<com.android.mms.util.Recycler$MmsRecycler: android.database.Cursor getAllThreads(android.content.Context)> android.permission.READ_SMS -> _SOURCE_");
 		data.add(
-				"<android.app.ApplicationPackageManager: android.graphics.drawable.Drawable getDrawable(java.lang.String,int,android.content.pm.ApplicationInfo)> android.permission.STOP_APP_SWITCHES -> _SOURCE_");
-		data.add(
 				"<com.google.common.collect.AbstractMultimap$WrappedCollection$WrappedIterator: java.util.Iterator getDelegateIterator()> android.permission.STOP_APP_SWITCHES -> _SOURCE_");
 		data.add(
 				"<com.android.mms.transaction.NotificationTransaction: byte[] getPdu(java.lang.String)> android.permission.READ_PHONE_STATE android.permission.CHANGE_NETWORK_STATE -> _SOURCE_");
@@ -486,15 +470,9 @@ public class ICCExitPointSourceSink {
 		data.add(
 				"<com.android.systemui.statusbar.phone.PhoneStatusBar: com.android.systemui.statusbar.phone.PhoneStatusBarView makeStatusBarView()> android.permission.READ_PHONE_STATE android.permission.CHANGE_WIFI_STATE android.permission.ACCESS_WIFI_STATE android.permission.ACCESS_COARSE_LOCATION android.permission.ACCESS_NETWORK_STATE -> _SOURCE_");
 		data.add(
-				"<android.os.Parcel: java.util.ArrayList createTypedArrayList(android.os.Parcelable$Creator)> android.permission.STOP_APP_SWITCHES -> _SOURCE_");
-		data.add(
 				"<android.inputmethodservice.KeyboardView$SwipeTracker: float getXVelocity()> android.permission.STOP_APP_SWITCHES -> _SOURCE_");
 		data.add(
 				"<android.hardware.input.IInputManager$Stub$Proxy: java.lang.String[] getKeyboardLayoutsForInputDevice(java.lang.String)> android.permission.STOP_APP_SWITCHES -> _SOURCE_");
-		data.add(
-				"<gov.nist.core.GenericObjectList: java.lang.String getIndentation()> android.permission.STOP_APP_SWITCHES -> _SOURCE_");
-		data.add(
-				"<java.text.DecimalFormat: java.text.DecimalFormatSymbols getDecimalFormatSymbols()> android.permission.STOP_APP_SWITCHES -> _SOURCE_");
 		data.add(
 				"<android.app.ActivityManager: java.util.List getRunningTasks(int)> android.permission.GET_TASKS -> _SOURCE_");
 		data.add(
@@ -503,8 +481,6 @@ public class ICCExitPointSourceSink {
 				"<com.android.launcher2.Launcher: com.android.launcher2.Workspace getWorkspace()> android.permission.STOP_APP_SWITCHES -> _SOURCE_");
 		data.add(
 				"<com.android.mms.transaction.RetrieveTransaction: byte[] getPdu(java.lang.String)> android.permission.READ_PHONE_STATE android.permission.CHANGE_NETWORK_STATE -> _SOURCE_");
-		data.add(
-				"<javax.crypto.CipherSpi: int engineUpdate(java.nio.ByteBuffer,java.nio.ByteBuffer)> android.permission.STOP_APP_SWITCHES -> _SOURCE_");
 		data.add(
 				"<com.android.mms.dom.NodeImpl: java.lang.String getTextContent()> android.permission.STOP_APP_SWITCHES -> _SOURCE_");
 		data.add(
@@ -577,6 +553,15 @@ public class ICCExitPointSourceSink {
 		data.add("<android.app.Activity: void startActivityIfNeeded(android.content.Intent,int)> -> _SINK_");
 		data.add(
 				"<android.app.Activity: android.content.ComponentName startService(android.content.Intent)> -> _SINK_");
+		data.add("<android.view.ContextThemeWrapper: android.content.ComponentName startService(android.content.Intent)> -> _SINK_");
+		data.add(
+				"<android.view.ContextThemeWrapper: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)> -> _SINK_");
+		data.add("<android.view.ContextThemeWrapper: void sendBroadcast(android.content.Intent)> -> _SINK_");
+		data.add("<android.view.ContextThemeWrapper: void sendBroadcast(android.content.Intent,java.lang.String)> -> _SINK_");
+		data.add("<android.view.ContextThemeWrapper: void startActivity(android.content.Intent)> -> _SINK_");
+		data.add("<android.view.ContextThemeWrapper: void sendStickyBroadcast(android.content.Intent)> -> _SINK_");
+		
+		
 		data.add(
 				"<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)> -> _SINK_");
 		data.add("<android.app.Activity: void sendBroadcast(android.content.Intent)> -> _SINK_");
@@ -601,6 +586,15 @@ public class ICCExitPointSourceSink {
 		
 		data.add("<android.content.BroadcastReceiver: void setResultData(java.lang.String)> -> _SINK_");
 		data.add("<android.content.BroadcastReceiver: void setResult(int,java.lang.String,android.os.Bundle)> -> _SINK_");
+		data.add("<android.content.Context: void setResultData(java.lang.String)> -> _SINK_");
+		data.add("<android.content.Context: void setResult(int,java.lang.String,android.os.Bundle)> -> _SINK_");
+		
+		data.add("<android.content.ContextWrapper: void setResultData(java.lang.String)> -> _SINK_");
+		data.add("<android.content.ContextWrapper: void setResult(int,java.lang.String,android.os.Bundle)> -> _SINK_");
+		data.add("<android.content.ContextThemeWrapper: void setResultData(java.lang.String)> -> _SINK_");
+		data.add("<android.content.ContextThemeWrapper: void setResult(int,java.lang.String,android.os.Bundle)> -> _SINK_");
+		
+		
 		
 		data.add("<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)> -> _SINK_");
 		data.add("<android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])> -> _SINK_");

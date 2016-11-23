@@ -21,6 +21,16 @@ public class ICCEntryPointSourceSink {
 		data.add("<android.content.BroadcastReceiver: java.lang.String getResultData()> -> _SOURCE_");
 		data.add("<android.content.BroadcastReceiver: android.os.Bundle getResultExtras(boolean)> -> _SOURCE_");
 		
+		data.add("<android.content.Context: android.content.Intent getIntent()> -> _SOURCE_");		
+		data.add("<android.content.Context: void onActivityResult(int,int,android.content.Intent)> -> _SOURCE_");
+		data.add("<android.content.Context: java.lang.String getResultData()> -> _SOURCE_");
+		data.add("<android.content.Context: android.os.Bundle getResultExtras(boolean)> -> _SOURCE_");
+		
+		data.add("<android.content.ContextWrapper: android.content.Intent getIntent()> -> _SOURCE_");		
+		data.add("<android.content.ContextWrapper: void onActivityResult(int,int,android.content.Intent)> -> _SOURCE_");
+		data.add("<android.content.ContextWrapper: java.lang.String getResultData()> -> _SOURCE_");
+		data.add("<android.content.ContextWrapper: android.os.Bundle getResultExtras(boolean)> -> _SOURCE_");
+		
 
 		
 		data.add("<android.content.Intent: android.os.Bundle getBundleExtra(java.lang.String)> -> _SOURCE_");
