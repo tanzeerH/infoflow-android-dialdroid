@@ -20,6 +20,7 @@ public class ICCEntryPointSourceSink {
 		data.add("<android.app.Activity: void onActivityResult(int,int,android.content.Intent)> -> _SOURCE_");
 		data.add("<android.content.BroadcastReceiver: java.lang.String getResultData()> -> _SOURCE_");
 		data.add("<android.content.BroadcastReceiver: android.os.Bundle getResultExtras(boolean)> -> _SOURCE_");
+		data.add("<android.content.ContentValues: java.lang.String getAsString(java.lang.String)> -> _SOURCE_");
 		
 		data.add("<android.content.Context: android.content.Intent getIntent()> -> _SOURCE_");		
 		data.add("<android.content.Context: void onActivityResult(int,int,android.content.Intent)> -> _SOURCE_");
@@ -286,6 +287,7 @@ public class ICCEntryPointSourceSink {
 		data.add("<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])> -> _SINK_");
 		data.add("<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)> -> _SINK_");
 		data.add("<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)> -> _SINK_");
+		
 
 		
 

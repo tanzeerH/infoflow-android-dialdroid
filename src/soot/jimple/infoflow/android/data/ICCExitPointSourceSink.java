@@ -601,7 +601,7 @@ public class ICCExitPointSourceSink {
 		data.add("<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])> -> _SINK_");
 		data.add("<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)> -> _SINK_");
 		data.add("<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)> -> _SINK_");
-
+		data.add("<android.database.MatrixCursor: void addRow(java.lang.Object[])> -> _SINK_");
 	}
 
 }
