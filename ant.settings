@@ -8,7 +8,7 @@ infoflow.jar=../infoflow-dialdroid/target/infoflow-dialdroid.jar
 infoflow-summaries.jar=
 
 # Target JAR file
-infoflow-android.jar=../dialdroid/lib/infoflow-android-dialdroid.jar
+infoflow-android.jar=./target/infoflow-android-dialdroid.jar
 infoflow-android-javadoc.jar=./target/infoflow-android-javadoc.jar
 
 # Path to DroidBench

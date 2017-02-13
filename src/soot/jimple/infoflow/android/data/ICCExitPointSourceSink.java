@@ -37,7 +37,7 @@ public class ICCExitPointSourceSink {
 		data.add("<android.bluetooth.BluetoothAdapter: java.lang.String getAddress()> android.permission.BLUETOOTH_ADMIN -> _SOURCE_");
 		data.add("<android.net.wifi.WifiInfo: java.lang.String: getMacAddress()> android.permission.ACCESS_WIFI_STATE -> _SOURCE_");
 		//data.add("<java.util.Locale: java.lang.String getCountry()> android.permission.ACCESS_COARSE_LOCATION -> _SOURCE_");
-		data.add("<android.net.wifi.WifiInfo: java.lang.String getSSID()> android.permission.ACCESS_WIFI_STATE -> _SOURCE_");
+		data.add("<android.net.wifi.WifiInfo: java.lang.String getSSID()> android.permissionget.ACCESS_WIFI_STATE -> _SOURCE_");
 		data.add("<android.net.wifi.WifiInfo: java.lang.String getSubscriberId()> android.permission.ACCESS_WIFI_STATE -> _SOURCE_");
 		data.add("<android.telephony.gsm.GsmCellLocation: int getCid()> android.permission.ACCESS_COARSE_LOCATION -> _SOURCE_");
 		data.add("<android.telephony.gsm.GsmCellLocation: int getLac()> android.permission.ACCESS_COARSE_LOCATION -> _SOURCE_");
@@ -495,7 +495,11 @@ public class ICCExitPointSourceSink {
 		data.add("<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)> -> _SOURCE_");
 		data.add("<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)> -> _SOURCE_");
 
-
+		data.add("<android.content.BroadcastReceiver: java.lang.String getResultData()> -> _SOURCE_");
+		data.add("<android.content.Context: java.lang.String getResultData()> -> _SOURCE_");
+		data.add("<android.content.ContextWrapper: java.lang.String getResultData()> -> _SOURCE_");
+		data.add("<android.content.ContextThemeWrapper: java.lang.String getResultData()> -> _SOURCE_");
+		
 		data.add("<android.content.Context: void sendBroadcast(android.content.Intent)> -> _SINK_");
 		data.add("<android.content.Context: void sendBroadcast(android.content.Intent,java.lang.String)> -> _SINK_");
 		data.add("<android.content.Context: void startActivity(android.content.Intent)> -> _SINK_");
@@ -509,6 +513,8 @@ public class ICCExitPointSourceSink {
 				"<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)> -> _SINK_");
 		data.add("<android.content.Context: void sendBroadcast(android.content.Intent)> -> _SINK_");
 		data.add("<android.content.Context: void sendBroadcast(android.content.Intent,java.lang.String)> -> _SINK_");
+		data.add("<android.content.Context: void sendStickyBroadcast(android.content.Intent)> -> _SINK_");
+		
 		
 		data.add("<android.content.ContextWrapper: void sendBroadcast(android.content.Intent)> -> _SINK_");
 		data.add("<android.content.ContextWrapper: void sendBroadcast(android.content.Intent,java.lang.String)> -> _SINK_");
@@ -516,7 +522,6 @@ public class ICCExitPointSourceSink {
 		data.add("<android.content.ContextWrapper: void startActivity(android.content.Intent,android.os.Bundle)> -> _SINK_");
 		data.add("<android.content.ContextWrapper: void startActivities(android.content.Intent[])> -> _SINK_");
 		
-		data.add("<android.content.Context: void sendStickyBroadcast(android.content.Intent)> -> _SINK_");
 		data.add("<android.content.ContextWrapper: void sendStickyBroadcast(android.content.Intent)> -> _SINK_");
 		
 		data.add(
@@ -528,8 +533,29 @@ public class ICCExitPointSourceSink {
 		data.add(
 				"<android.content.ContextWrapper: android.os.IBinder onBind(android.content.Intent)> -> _SINK_");
 		
-		data.add("<android.content.ContextWrapper: void sendBroadcast(android.content.Intent)> -> _SINK_");
-		data.add("<android.content.ContextWrapper: void sendBroadcast(android.content.Intent,java.lang.String)> -> _SINK_");
+		data.add("<android.content.ContextThemeWrapper: void sendBroadcast(android.content.Intent)> -> _SINK_");
+		data.add("<android.content.ContextThemeWrapper: void sendBroadcast(android.content.Intent,java.lang.String)> -> _SINK_");
+		
+		data.add("<android.content.ContextThemeWrapper: void sendBroadcast(android.content.Intent)> -> _SINK_");
+		data.add("<android.content.ContextThemeWrapper: void sendBroadcast(android.content.Intent,java.lang.String)> -> _SINK_");
+		data.add("<android.content.ContextThemeWrapper: void startActivity(android.content.Intent)> -> _SINK_");
+		data.add("<android.content.ContextThemeWrapper: void startActivity(android.content.Intent,android.os.Bundle)> -> _SINK_");
+		data.add("<android.content.ContextThemeWrapper: void startActivities(android.content.Intent[])> -> _SINK_");
+		
+		data.add("<android.content.ContextThemeWrapper: void sendStickyBroadcast(android.content.Intent)> -> _SINK_");
+		
+		data.add(
+				"<android.content.ContextThemeWrapper: void startActivities(android.content.Intent[],android.os.Bundle)> -> _SINK_");
+		data.add(
+				"<android.content.ContextThemeWrapper: android.content.ComponentName startService(android.content.Intent)> -> _SINK_");
+		data.add(
+				"<android.content.ContextThemeWrapper: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)> -> _SINK_");
+		data.add(
+				"<android.content.ContextThemeWrapper: android.os.IBinder onBind(android.content.Intent)> -> _SINK_");
+		
+		data.add("<android.content.ContextThemeWrapper: void sendBroadcast(android.content.Intent)> -> _SINK_");
+		data.add("<android.content.ContextThemeWrapper: void sendBroadcast(android.content.Intent,java.lang.String)> -> _SINK_");
+
 		
 		data.add("<android.app.Activity: void setResult(int,android.content.Intent)> -> _SINK_");
 		data.add("<android.app.Activity: void startActivity(android.content.Intent)> -> _SINK_");
