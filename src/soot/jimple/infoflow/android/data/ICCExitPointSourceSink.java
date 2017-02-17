@@ -500,6 +500,11 @@ public class ICCExitPointSourceSink {
 		data.add("<android.content.ContextWrapper: java.lang.String getResultData()> -> _SOURCE_");
 		data.add("<android.content.ContextThemeWrapper: java.lang.String getResultData()> -> _SOURCE_");
 		
+		//data.add("<android.app.Activity: android.content.Intent getIntent()> -> _SOURCE_");
+		//data.add("<android.app.Context: android.content.Intent getIntent()> -> _SOURCE_");
+		//data.add("<android.app.ContextWrapper: android.content.Intent getIntent()> -> _SOURCE_");
+		//data.add("<android.app.ContextThemeWrapper: android.content.Intent getIntent()> -> _SOURCE_");
+		
 		data.add("<android.content.Context: void sendBroadcast(android.content.Intent)> -> _SINK_");
 		data.add("<android.content.Context: void sendBroadcast(android.content.Intent,java.lang.String)> -> _SINK_");
 		data.add("<android.content.Context: void startActivity(android.content.Intent)> -> _SINK_");
