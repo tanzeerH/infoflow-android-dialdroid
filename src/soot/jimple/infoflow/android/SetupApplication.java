@@ -701,6 +701,7 @@ public class SetupApplication {
 		// Always update the entry point creator to reflect the newest set
 		// of callback methods
 		SootMethod entryPoint = createEntryPointCreator().createDummyMain();
+		System.out.println(entryPoint.toString());
 		Scene.v().setEntryPoints(Collections.singletonList(entryPoint));
 		if (Scene.v().containsClass(entryPoint.getDeclaringClass().getName()))
 			Scene.v().removeClass(entryPoint.getDeclaringClass());
