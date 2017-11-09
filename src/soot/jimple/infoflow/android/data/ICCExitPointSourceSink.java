@@ -26,13 +26,6 @@ public class ICCExitPointSourceSink {
 				"<android.telephony.TelephonyManager: java.lang.String getSimOperatorName()> android.permission.READ_PHONE_STATE -> _SOURCE_");
 		data.add(
 				"<android.telephony.TelephonyManager: java.lang.String getNetworkOperator()> android.permission.READ_PHONE_STATE -> _SOURCE_");
-		data.add(
-				"<android.telephony.TelephonyManager: java.lang.String getDeviceSoftwareVersion()> android.permission.READ_PHONE_STATE -> _SOURCE_");
-		data.add("<android.media.AudioRecord: int read(short[],int,int)> android.permission.RECORD_AUDIO -> _SOURCE_");
-		data.add("<android.media.AudioRecord: int read(byte[],int,int)> android.permission.RECORD_AUDIO -> _SOURCE_");
-		data.add("<android.media.AudioRecord: int read(java.nio.ByteBuffer,int)> android.permission.RECORD_AUDIO -> _SOURCE_");
-		//data.add("<android.content.pm.PackageManager: java.util.List getInstalledApplications(int)> android.permission.PACKAGE_USAGE_STATS -> _SOURCE_");
-		//data.add("<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)> android.permission.PACKAGE_USAGE_STATS -> _SOURCE_");
 		
 		data.add("<android.bluetooth.BluetoothAdapter: java.lang.String getAddress()> android.permission.BLUETOOTH_ADMIN -> _SOURCE_");
 		data.add("<android.net.wifi.WifiInfo: java.lang.String: getMacAddress()> android.permission.ACCESS_WIFI_STATE -> _SOURCE_");
@@ -44,57 +37,9 @@ public class ICCExitPointSourceSink {
 		data.add("<android.location.Location: double getLongitude()> android.permission.ACCESS_FINE_LOCATION -> _SOURCE_");
 		data.add("<android.location.Location: double getLatitude()> android.permission.ACCESS_FINE_LOCATION -> _SOURCE_");
 		data.add("<android.accounts.AccountManager: android.accounts.Account[] getAccounts()> -> _SOURCE_");
-		//data.add("<java.util.Calendar: java.util.TimeZone getTimeZone()> android.permission.READ_CALENDAR -> _SOURCE_");
-		data.add("<android.provider.Browser: android.database.Cursor getAllBookmarks()> com.android.browser.permission.READ_HISTORY_BOOKMARKS -> _SOURCE_");
-		data.add("<android.provider.Browser: android.database.Cursor getAllVisitedUrls()> com.android.browser.permission.READ_HISTORY_BOOKMARKS -> _SOURCE_");
-
-		data.add(
-				"<com.android.internal.telephony.PhoneSubInfoProxy: java.lang.String getSubscriberId()> android.permission.READ_PHONE_STATE -> _SOURCE_");
-		data.add(
-				"<com.android.internal.telephony.cdma.CDMALTEPhone: java.lang.String getImei()> android.permission.STOP_APP_SWITCHES -> _SOURCE_");
-		data.add(
-				"<android.telephony.TelephonyManager: java.lang.String getCompleteVoiceMailNumber()> android.permission.CALL_PRIVILEGED -> _SOURCE_");
-		data.add(
-				"<com.android.internal.telephony.IPhoneSubInfo$Stub$Proxy: java.lang.String getVoiceMailNumber()> android.permission.READ_PHONE_STATE -> _SOURCE_");
-		data.add(
-				"<com.android.internal.telephony.PhoneSubInfo: java.lang.String getDeviceId()> android.permission.READ_PHONE_STATE -> _SOURCE_");
-		data.add(
-				"<com.android.internal.telephony.IPhoneSubInfo$Stub$Proxy: java.lang.String getMsisdn()> android.permission.READ_PHONE_STATE -> _SOURCE_");
-		data.add(
-				"<com.android.internal.telephony.IPhoneSubInfo$Stub$Proxy: java.lang.String getLine1AlphaTag()> android.permission.READ_PHONE_STATE -> _SOURCE_");
-		data.add(
-				"<com.android.internal.telephony.PhoneSubInfoProxy: java.lang.String getVoiceMailNumber()> android.permission.READ_PHONE_STATE -> _SOURCE_");
-		data.add(
+				data.add(
 				"<android.telephony.TelephonyManager: java.lang.String getLine1Number()> android.permission.READ_PHONE_STATE -> _SOURCE_");
-		data.add(
-				"<com.android.internal.telephony.PhoneSubInfo: java.lang.String getSubscriberId()> android.permission.READ_PHONE_STATE -> _SOURCE_");
-		data.add(
-				"<com.android.internal.telephony.IPhoneSubInfo$Stub$Proxy: java.lang.String getDeviceSvn()> android.permission.READ_PHONE_STATE -> _SOURCE_");
-		data.add(
-				"<com.android.server.location.LocationBasedCountryDetector: android.location.Country detectCountry()> android.permission.ACCESS_FINE_LOCATION android.permission.ACCESS_COARSE_LOCATION -> _SOURCE_");
-		data.add(
-				"<com.android.internal.telephony.cdma.CDMAPhone: void getPreferredNetworkType(android.os.Message)> android.permission.WAKE_LOCK -> _SOURCE_");
-		data.add(
-				"<android.location.ILocationManager$Stub$Proxy: java.lang.String getBestProvider(android.location.Criteria,boolean)> android.permission.ACCESS_FINE_LOCATION android.permission.ACCESS_COARSE_LOCATION -> _SOURCE_");
-		data.add(
-				"<com.android.internal.telephony.sip.SipPhone: void getPreferredNetworkType(android.os.Message)> android.permission.WAKE_LOCK -> _SOURCE_");
-		data.add(
-				"<android.location.LocationManager: java.lang.String getBestProvider(android.location.Criteria,boolean)> android.permission.ACCESS_FINE_LOCATION android.permission.ACCESS_COARSE_LOCATION -> _SOURCE_");
 		data.add("<android.location.Location: double getLatitude()> android.permission.STOP_APP_SWITCHES -> _SOURCE_");
-		data.add(
-				"<com.android.internal.telephony.cdma.CDMALTEPhone: void getPreferredNetworkType(android.os.Message)> android.permission.WAKE_LOCK -> _SOURCE_");
-		data.add(
-				"<com.android.internal.telephony.gsm.GSMPhone: void getPreferredNetworkType(android.os.Message)> android.permission.WAKE_LOCK -> _SOURCE_");
-		data.add(
-				"<com.android.server.location.PassiveProvider: com.android.internal.location.ProviderProperties getProperties()> android.permission.STOP_APP_SWITCHES -> _SOURCE_");
-		data.add(
-				"<android.telephony.TelephonyManager: android.telephony.CellLocation getCellLocation()> android.permission.ACCESS_FINE_LOCATION android.permission.ACCESS_COARSE_LOCATION -> _SOURCE_");
-		data.add(
-				"<com.android.internal.telephony.PhoneBase: void getPreferredNetworkType(android.os.Message)> android.permission.WAKE_LOCK -> _SOURCE_");
-		data.add(
-				"<android.location.ILocationManager$Stub$Proxy: java.util.List getProviders(android.location.Criteria,boolean)> android.permission.ACCESS_FINE_LOCATION android.permission.ACCESS_COARSE_LOCATION -> _SOURCE_");
-		data.add(
-				"<com.android.phone.PhoneInterfaceManager: android.os.Bundle getCellLocation()> android.permission.ACCESS_FINE_LOCATION android.permission.ACCESS_COARSE_LOCATION -> _SOURCE_");
 		data.add(
 				"<android.location.LocationManager: boolean isProviderEnabled(java.lang.String)> android.permission.ACCESS_FINE_LOCATION android.permission.ACCESS_COARSE_LOCATION -> _SOURCE_");
 		data.add(

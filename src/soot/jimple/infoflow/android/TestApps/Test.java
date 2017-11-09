@@ -50,6 +50,7 @@ import soot.jimple.infoflow.config.IInfoflowConfig;
 import soot.jimple.infoflow.data.Abstraction;
 import soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory.PathBuilder;
 import soot.jimple.infoflow.handlers.ResultsAvailableHandler;
+import soot.jimple.infoflow.handlers.ResultsAvailableHandler2;
 import soot.jimple.infoflow.ipc.IIPCManager;
 import soot.jimple.infoflow.results.InfoflowResults;
 import soot.jimple.infoflow.results.ResultSinkInfo;
@@ -63,6 +64,7 @@ import soot.options.Options;
 
 public class Test {
 	
+	private static ResultsAvailableHandler resultsAvailableHandler=null;
 	private static final class MyResultsAvailableHandler implements
 			ResultsAvailableHandler {
 		private final BufferedWriter wr;
@@ -86,6 +88,7 @@ public class Test {
 				results.setInfoflowCFG(cfg);
 				// Report the results
 				for (ResultSinkInfo sink : results.getResults().keySet()) {
+					System.out.println("done with search");
 					print("Found a flow to sink " + sink + ", from the following sources:");
 					for (ResultSourceInfo source : results.getResults().get(sink)) {
 						print("\t- " + source.getSource() + " (in "
@@ -114,7 +117,17 @@ public class Test {
 			}
 			
 		}
-
+		@Override
+		public boolean onSingleResultAvailable(ResultSourceInfo source, ResultSinkInfo sinks) {
+			if(resultsAvailableHandler != null)
+				resultsAvailableHandler.onSingleResultAvailable(source, sinks);
+			System.out.println("incremental printing");
+			System.out.println(("\t- " + source.getSource() + " (in "));
+			if (source.getPath() != null)
+				System.out.println(("\t\ton Path " + Arrays.toString(source.getPath())));	
+			return false;
+		}
+		
 		private void print(String string) {
 			try {
 				System.out.println(string);
@@ -126,6 +139,8 @@ public class Test {
 			}
 		}
 	}
+	
+
 	
 	private static InfoflowAndroidConfiguration config = new InfoflowAndroidConfiguration();
 	
@@ -156,6 +171,12 @@ public class Test {
 		return Test.ipcManager;
 	}
 	
+	public static InfoflowResults runAnalysisForResultsWithIncrementalReporting( final String[] args, ResultsAvailableHandler dialDroidResultsAvailableHandler) throws IOException, InterruptedException
+
+	{
+		resultsAvailableHandler=dialDroidResultsAvailableHandler;
+		return runAnalysisForResults(args);
+	}
 	/**
 	 * @param args Program arguments. args[0] = path to apk-file,
 	 * args[1] = path to android-dir (path/android-platforms/)

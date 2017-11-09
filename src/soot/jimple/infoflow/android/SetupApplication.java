@@ -816,8 +816,8 @@ public class SetupApplication {
 
 		System.out.println("Running data flow analysis on " + apkFileLocation + " with " + getSources().size()
 				+ " sources and " + getSinks().size() + " sinks...");
-		printSources();
-		printSources();
+		//printSources();
+		//printSinks();
 		Infoflow info;
 		if (cfgFactory == null)
 			info = new Infoflow(androidJar, forceAndroidJar, null,
