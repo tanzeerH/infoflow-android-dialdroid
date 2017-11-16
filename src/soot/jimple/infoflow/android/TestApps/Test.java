@@ -118,13 +118,13 @@ public class Test {
 			
 		}
 		@Override
-		public boolean onSingleResultAvailable(ResultSourceInfo source, ResultSinkInfo sinks) {
+		public boolean onSingleResultAvailable(IInfoflowCFG cfg,ResultSourceInfo source, ResultSinkInfo sinks) {
 			if(resultsAvailableHandler != null)
-				resultsAvailableHandler.onSingleResultAvailable(source, sinks);
-			System.out.println("incremental printing");
+				resultsAvailableHandler.onSingleResultAvailable(cfg,source, sinks);
+			/*System.out.println("incremental printing");
 			System.out.println(("\t- " + source.getSource() + " (in "));
 			if (source.getPath() != null)
-				System.out.println(("\t\ton Path " + Arrays.toString(source.getPath())));	
+				System.out.println(("\t\ton Path " + Arrays.toString(source.getPath())));	*/
 			return false;
 		}
 		
