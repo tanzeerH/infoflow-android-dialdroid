@@ -77,21 +77,7 @@ public class ICCEntryPointSourceSink {
 		data.add("<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)> -> _SOURCE_");
 
 		
-		data.add("<android.util.Log: int d(java.lang.String,java.lang.String)> -> _SINK_");
-		data.add("<android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)> -> _SINK_");
-		data.add("<android.util.Log: int e(java.lang.String,java.lang.String)> -> _SINK_");
-		data.add("<android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)> -> _SINK_");
-		data.add("<android.util.Log: int i(java.lang.String,java.lang.String)> -> _SINK_");
-		data.add("<android.util.Log: int i(java.lang.String,java.lang.String,java.lang.Throwable)> -> _SINK_");
-		data.add("<android.util.Log: int v(java.lang.String,java.lang.String)> -> _SINK_");
-		data.add("<android.util.Log: int v(java.lang.String,java.lang.String,java.lang.Throwable)> -> _SINK_");
-		data.add("<android.util.Log: int w(java.lang.String,java.lang.Throwable)> -> _SINK_");
-		data.add("<android.util.Log: int w(java.lang.String,java.lang.String)> -> _SINK_");
-		data.add("<android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)> -> _SINK_");
-		data.add("<android.util.Log: int wtf(java.lang.String,java.lang.Throwable)> -> _SINK_");
-		data.add("<android.util.Log: int wtf(java.lang.String,java.lang.String)> -> _SINK_");
-		data.add("<android.util.Log: int wtf(java.lang.String,java.lang.String,java.lang.Throwable)> -> _SINK_");
-
+		
 		data.add("<java.io.OutputStream: void write(byte[])> -> _SINK_");
 		data.add("<java.io.OutputStream: void write(byte[],int,int)> -> _SINK_");
 		data.add("<java.io.OutputStream: void write(int)> -> _SINK_");
@@ -111,6 +97,7 @@ public class ICCEntryPointSourceSink {
 		data.add("<java.io.Writer: java.io.Writer append(java.lang.CharSequence)> -> _SINK_");
 
 		data.add("<java.io.OutputStreamWriter: java.io.Writer append(java.lang.CharSequence)> -> _SINK_");
+		data.add("<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>  android.permission.INTERNET -> -> _SINK_");
 
 		data.add("<java.net.URL: void set(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String)> -> _SINK_");
 		data.add("<java.net.URL: void set(java.lang.String,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> -> _SINK_");
@@ -118,23 +105,6 @@ public class ICCEntryPointSourceSink {
 		data.add("<android.telephony.SmsManager: void sendDataMessage(java.lang.String,java.lang.String,short,byte[],android.app.PendingIntent,android.app.PendingIntent)> android.permission.SEND_SMS -> _SINK_"); 
 		data.add("<android.telephony.SmsManager: void sendMultipartTextMessage(java.lang.String,java.lang.String,java.util.ArrayList,java.util.ArrayList,java.util.ArrayList)> android.permission.SEND_SMS -> _SINK_"); 
 		data.add("<java.net.Socket: void connect(java.net.SocketAddress)> -> _SINK_");
-		data.add("<android.os.Handler: boolean sendMessage(android.os.Message)> -> _SINK_");
-
-		data.add("<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)> -> _SINK_");
-		data.add("<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)> -> _SINK_");
-		data.add("<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)> -> _SINK_");
-		data.add("<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)> -> _SINK_");
-		data.add("<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)> -> _SINK_");
-
-		data.add("<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)> -> _SINK_");
-		data.add("<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putFloat(java.lang.String,float)> -> _SINK_");
-		data.add("<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)> -> _SINK_");
-		data.add("<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)> -> _SINK_");
-		data.add("<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)> -> _SINK_");		
-		data.add("<org.apache.http.impl.client.DefaultHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)> -> _SINK_");
-		data.add("<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)> -> _SINK_");		
-		data.add("<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)> -> _SOURCE_");
-
 		data.add("<java.net.URL: void <init>(java.lang.String,java.lang.String,int,java.lang.String)> -> _SINK_");
 		data.add("<java.net.URL: void <init>(java.lang.String,java.lang.String,java.lang.String)> -> _SINK_");
 		data.add("<java.net.URL: void <init>(java.lang.String,java.lang.String,int,java.lang.String,java.net.URLStreamHandler)> -> _SINK_");
@@ -147,41 +117,22 @@ public class ICCEntryPointSourceSink {
 		data.add("<com.android.internal.telephony.cdma.CDMALTEPhone: com.android.internal.telephony.Connection dial(java.lang.String)> android.permission.WAKE_LOCK -> _SINK_");
 		data.add("<android.net.sip.ISipService$Stub$Proxy: void open3(android.net.sip.SipProfile,android.app.PendingIntent,android.net.sip.ISipSessionListener)> android.permission.USE_SIP android.permission.WAKE_LOCK -> _SINK_");
 		data.add("<com.android.internal.telephony.cdma.CDMAPhone: com.android.internal.telephony.Connection dial(java.lang.String)> android.permission.WAKE_LOCK -> _SINK_");
-		data.add("<com.android.internal.telephony.sip.SipPhoneBase: com.android.internal.telephony.Connection dial(java.lang.String,com.android.internal.telephony.UUSInfo)> android.permission.USE_SIP -> _SINK_");
-		data.add("<android.net.IConnectivityManager$Stub$Proxy: int startUsingNetworkFeature(int,java.lang.String,android.os.IBinder)> android.permission.READ_PHONE_STATE android.permission.BLUETOOTH android.permission.CHANGE_WIFI_STATE android.permission.ACCESS_WIFI_STATE android.permission.CHANGE_NETWORK_STATE android.permission.BLUETOOTH_ADMIN android.permission.ACCESS_NETWORK_STATE -> _SINK_");
 		data.add("<com.android.server.WifiService: void setCountryCode(java.lang.String,boolean)> android.permission.WRITE_SETTINGS android.permission.CHANGE_WIFI_STATE -> _SINK_");
-		data.add("<android.net.IConnectivityManager$Stub$Proxy: int setUsbTethering(boolean)> android.permission.ACCESS_NETWORK_STATE -> _SINK_");
+		
 		data.add("<android.net.wifi.p2p.IWifiP2pManager$Stub: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)> android.permission.CHANGE_WIFI_STATE android.permission.ACCESS_WIFI_STATE -> _SINK_");
 		data.add("<java.net.URL: java.net.URLConnection openConnection()> android.permission.INTERNET -> _SINK_");
 		data.add("<com.android.server.net.NetworkStatsService: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)> android.permission.ACCESS_NETWORK_STATE -> _SINK_");
 		data.add("<android.net.IConnectivityManager$Stub$Proxy: boolean setRadios(boolean)> android.permission.CHANGE_WIFI_STATE android.permission.CHANGE_NETWORK_STATE -> _SINK_");
 		data.add("<android.net.wifi.p2p.WifiP2pManager: void removeGroup(android.net.wifi.p2p.WifiP2pManager$Channel,android.net.wifi.p2p.WifiP2pManager$ActionListener)> android.permission.STOP_APP_SWITCHES -> _SINK_");
-		data.add("<android.net.IConnectivityManager$Stub$Proxy: boolean setRadio(int,boolean)> android.permission.CHANGE_WIFI_STATE android.permission.CHANGE_NETWORK_STATE -> _SINK_");
-		data.add("<android.net.INetworkStatsService$Stub: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)> android.permission.ACCESS_NETWORK_STATE -> _SINK_");
-		data.add("<android.net.IConnectivityManager$Stub$Proxy: boolean requestRouteToHost(int,int)> android.permission.CHANGE_NETWORK_STATE -> _SINK_");
-		data.add("<android.net.wifi.WifiStateMachine: void setCountryCode(java.lang.String,boolean)> android.permission.WRITE_SETTINGS -> _SINK_");
-		data.add("<android.net.wifi.WifiManager$WifiLock: void setWorkSource(android.os.WorkSource)> android.permission.STOP_APP_SWITCHES -> _SINK_");
-		data.add("<com.android.server.WifiService: void setWifiApEnabled(android.net.wifi.WifiConfiguration,boolean)> android.permission.CHANGE_WIFI_STATE -> _SINK_");
-		data.add("<android.net.wifi.p2p.WifiP2pService: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)> android.permission.CHANGE_WIFI_STATE android.permission.ACCESS_WIFI_STATE -> _SINK_");
-		data.add("<android.net.IConnectivityManager$Stub$Proxy: void setMobileDataEnabled(boolean)> android.permission.CHANGE_NETWORK_STATE -> _SINK_");
+		
 		data.add("<com.android.systemui.screenshot.SaveImageInBackgroundTask: com.android.systemui.screenshot.SaveImageInBackgroundData doInBackground(com.android.systemui.screenshot.SaveImageInBackgroundData[])> android.permission.STOP_APP_SWITCHES -> _SINK_");
 		data.add("<com.android.server.net.NetworkStatsService: void dump(java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])> android.permission.ACCESS_NETWORK_STATE -> _SINK_");
 		data.add("<android.content.ContentService: void dump(java.io.FileDescriptor,java.io.PrintWriter,java.lang.String[])> android.permission.DUMP -> _SINK_");
 		data.add("<android.content.ContentService: void dump(java.io.FileDescriptor,java.lang.String[])> android.permission.DUMP android.permission.BLUETOOTH android.permission.ACCESS_NETWORK_STATE android.permission.BACKUP -> _SINK_");
 		data.add("<android.os.FileUtils: void stringToFile(java.lang.String,java.lang.String)> android.permission.STOP_APP_SWITCHES -> _SINK_");
 		data.add("<android.filterpacks.videosink.MediaEncoderFilter: void open(android.filterfw.core.FilterContext)> android.permission.CAMERA android.permission.RECORD_AUDIO -> _SINK_");
-		data.add("<android.util.Slog: int v(java.lang.String,java.lang.String,java.lang.Throwable)> android.permission.STOP_APP_SWITCHES -> _SINK_");
-		data.add("<android.util.Slog: int i(java.lang.String,java.lang.String,java.lang.Throwable)> android.permission.STOP_APP_SWITCHES -> _SINK_");
-		data.add("<android.util.Log: int v(java.lang.String,java.lang.String)> android.permission.STOP_APP_SWITCHES -> _SINK_");
-		data.add("<android.util.Log: int e(java.lang.String,java.lang.String)> android.permission.STOP_APP_SWITCHES -> _SINK_");
-		data.add("<android.util.Log: int println(int,java.lang.String,java.lang.String)> android.permission.STOP_APP_SWITCHES -> _SINK_");
 		data.add("<com.android.mms.transaction.ReadRecTransaction: byte[] sendPdu(byte[],java.lang.String)> android.permission.READ_PHONE_STATE android.permission.CHANGE_NETWORK_STATE -> _SINK_");
 		data.add("<com.android.internal.telephony.cdma.CdmaSMSDispatcher: void dispatch(android.content.Intent,java.lang.String)> android.permission.WAKE_LOCK -> _SINK_");
-		data.add("<com.android.internal.telephony.cdma.CdmaSMSDispatcher: void sendSubmitPdu(com.android.internal.telephony.cdma.SmsMessage$SubmitPdu,android.app.PendingIntent,android.app.PendingIntent,java.lang.String)> android.permission.WAKE_LOCK -> _SINK_");
-		data.add("<com.android.internal.telephony.cdma.RuimSmsInterfaceManager: void sendData(java.lang.String,java.lang.String,int,byte[],android.app.PendingIntent,android.app.PendingIntent)> android.permission.SEND_SMS -> _SINK_");
-		data.add("<android.telephony.SmsManager: boolean disableCellBroadcast(int)> android.permission.RECEIVE_SMS -> _SINK_");
-		data.add("<com.android.mms.transaction.SendTransaction: byte[] sendPdu(byte[],java.lang.String)> android.permission.READ_PHONE_STATE android.permission.CHANGE_NETWORK_STATE -> _SINK_");
-		data.add("<com.android.internal.telephony.ISms$Stub$Proxy: boolean disableCellBroadcast(int)> android.permission.RECEIVE_SMS -> _SINK_");
 		data.add("<com.android.internal.telephony.gsm.SimSmsInterfaceManager: void sendData(java.lang.String,java.lang.String,int,byte[],android.app.PendingIntent,android.app.PendingIntent)> android.permission.SEND_SMS -> _SINK_");
 		data.add("<com.android.mms.transaction.NotificationTransaction: byte[] sendPdu(long,byte[],java.lang.String)> android.permission.READ_PHONE_STATE android.permission.CHANGE_NETWORK_STATE -> _SINK_");
 		data.add("<com.android.internal.telephony.cdma.CdmaSMSDispatcher: int dispatchMessage(com.android.internal.telephony.SmsMessageBase)> android.permission.READ_SMS android.permission.SEND_SMS android.permission.WRITE_SMS android.permission.RECEIVE_SMS android.permission.READ_CONTACTS android.permission.WRITE_CONTACTS android.permission.WAKE_LOCK -> _SINK_");
@@ -199,17 +150,6 @@ public class ICCEntryPointSourceSink {
 		data.add("<com.android.mms.transaction.NotificationTransaction: byte[] sendPdu(byte[],java.lang.String)> android.permission.READ_PHONE_STATE android.permission.CHANGE_NETWORK_STATE -> _SINK_");
 		data.add("<android.telephony.gsm.SmsManager: void sendMultipartTextMessage(java.lang.String,java.lang.String,java.util.ArrayList,java.util.ArrayList,java.util.ArrayList)> android.permission.SEND_SMS -> _SINK_");
 		data.add("<com.android.internal.telephony.gsm.GsmSMSDispatcher: void dispatch(android.content.Intent,java.lang.String)> android.permission.WAKE_LOCK -> _SINK_");
-		data.add("<com.android.internal.telephony.SMSDispatcher: int processMessagePart(byte[],java.lang.String,int,int,int,long,int,boolean)> android.permission.READ_SMS android.permission.SEND_SMS android.permission.WRITE_SMS android.permission.RECEIVE_SMS android.permission.READ_CONTACTS android.permission.WRITE_CONTACTS android.permission.WAKE_LOCK -> _SINK_");
-		data.add("<com.android.internal.telephony.ISms$Stub$Proxy: boolean disableCellBroadcastRange(int,int)> android.permission.RECEIVE_SMS android.permission.WAKE_LOCK -> _SINK_");
-		data.add("<com.android.internal.telephony.cdma.CdmaSMSDispatcher: int processMessagePart(byte[],java.lang.String,int,int,int,long,int,boolean)> android.permission.READ_SMS android.permission.SEND_SMS android.permission.WRITE_SMS android.permission.RECEIVE_SMS android.permission.READ_CONTACTS android.permission.WRITE_CONTACTS android.permission.WAKE_LOCK -> _SINK_");
-		data.add("<com.android.internal.telephony.SMSDispatcher: void dispatch(android.content.Intent,java.lang.String,android.content.BroadcastReceiver)> android.permission.WAKE_LOCK -> _SINK_");
-		data.add("<com.android.internal.telephony.IccSmsInterfaceManager: void sendData(java.lang.String,java.lang.String,int,byte[],android.app.PendingIntent,android.app.PendingIntent)> android.permission.SEND_SMS -> _SINK_");
-		data.add("<com.android.internal.telephony.cdma.CdmaSMSDispatcher: void dispatch(android.content.Intent,java.lang.String,android.content.BroadcastReceiver)> android.permission.WAKE_LOCK -> _SINK_");
-		data.add("<com.google.android.mms.pdu.PduPersister: void updateHeaders(android.net.Uri,com.google.android.mms.pdu.SendReq)> android.permission.READ_SMS -> _SINK_");
-		data.add("<android.telephony.SmsManager: boolean deleteMessageFromIcc(int)> android.permission.SEND_SMS android.permission.RECEIVE_SMS android.permission.WAKE_LOCK -> _SINK_");
-		data.add("<com.android.mms.transaction.SendTransaction: byte[] sendPdu(long,byte[],java.lang.String)> android.permission.READ_PHONE_STATE android.permission.CHANGE_NETWORK_STATE -> _SINK_");
-		data.add("<com.android.mms.transaction.Transaction: byte[] sendPdu(long,byte[],java.lang.String)> android.permission.READ_PHONE_STATE android.permission.CHANGE_NETWORK_STATE -> _SINK_");
-		data.add("<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)> -> _SINK_");
 		data.add("<android.content.Intent: android.content.Intent setAction(java.lang.String)> -> _SINK_");
 		data.add("<android.content.Intent: android.content.Intent setClassName(android.content.Context,java.lang.Class)> -> _SINK_");
 		data.add("<android.content.Intent: android.content.Intent setClassName(android.content.Context,java.lang.String)> -> _SINK_");
@@ -225,7 +165,12 @@ public class ICCEntryPointSourceSink {
 		data.add(
 				"<android.content.Context: android.content.ComponentName startService(android.content.Intent)> -> _SINK_");
 		data.add(
-				"<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)> -> _SINK_");
+				"<android.content.Context: boolean bindService(android.content.data.add(\"<android.util.Slog: int v(java.lang.String,java.lang.String,java.lang.Throwable)> android.permission.STOP_APP_SWITCHES -> _SINK_\");\n" + 
+				"		data.add(\"<android.util.Slog: int i(java.lang.String,java.lang.String,java.lang.Throwable)> android.permission.STOP_APP_SWITCHES -> _SINK_\");\n" + 
+				"		data.add(\"<android.util.Log: int v(java.lang.String,java.lang.String)> android.permission.STOP_APP_SWITCHES -> _SINK_\");\n" + 
+				"		data.add(\"<android.util.Log: int e(java.lang.String,java.lang.String)> android.permission.STOP_APP_SWITCHES -> _SINK_\");\n" + 
+				"		data.add(\"<android.util.Log: int println(int,java.lang.String,java.lang.String)> android.permission.STOP_APP_SWITCHES -> _SINK_\");\n" + 
+				"		Intent,android.content.ServiceConnection,int)> -> _SINK_");
 		data.add("<android.content.Context: void sendBroadcast(android.content.Intent)> -> _SINK_");
 		data.add("<android.content.Context: void sendBroadcast(android.content.Intent,java.lang.String)> -> _SINK_");
 		
